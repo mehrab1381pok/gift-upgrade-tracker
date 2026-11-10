@@ -277,35 +277,52 @@ def bootstrap_gifts(bot, state, state_path, slugs, workers=6):
         list(ex.map(_boot, list(slugs)))
 
 
+def _poll_gift(bot, slug, rule, last, variant):
+    """Probe forward from `last`. Returns (new_last, variant, [matched])."""
+    matched = []
+    n = last + 1
+    checked = 0
+    while checked < CATCHUP_CAP:
+        g, variant = gift_exists(bot, slug, n, variant)
+        if g is None:
+            break
+        last = n
+        checked += 1
+        if matches(g, rule):
+            matched.append(g)
+        n += 1
+    return last, variant, matched
+
+
 def poll_once(bot, cfg, state, chat_id, dry_run, sleep=0.2):
-    """One cycle: check next number(s) of every gift. Returns alerts sent."""
-    sent = 0
+    """One cycle: check next number(s) of every gift, in parallel.
+    Returns alerts sent. Probing runs on POLL_WORKERS threads; sending
+    stays sequential in the main thread (Telegram ~1 msg/sec per chat)."""
     gifts_state = state.setdefault("gifts", {})
-    for slug, rule in cfg.items():
+    workers = int(os.environ.get("POLL_WORKERS", "8"))
+
+    def job(item):
+        slug, rule = item
         gs = gifts_state.setdefault(slug, {"last_seen": 0, "variant": None})
-        last = int(gs.get("last_seen", 0))
-        variant = gs.get("variant")
-        n = last + 1
-        checked = 0
-        while checked < CATCHUP_CAP:
-            g, variant = gift_exists(bot, slug, n, variant)
-            if g is None:
-                break
-            gs["variant"] = variant
-            last = n
-            checked += 1
-            if matches(g, rule):
-                text = format_alert(g)
-                if dry_run:
-                    log(f"  [dry-run] would post:\n{text}")
-                elif bot.send_message(chat_id, text):
-                    sent += 1
-                    time.sleep(1.1)  # stay under Telegram's ~1 msg/sec per chat
-                log(f"  ✅ {g.get('name')} model={g.get('model', {}).get('name')} "
-                    f"backdrop={g.get('backdrop', {}).get('name')}")
-            n += 1
-            time.sleep(sleep)
-        gs["last_seen"] = last
+        return slug, _poll_gift(bot, slug, rule,
+                                int(gs.get("last_seen", 0)), gs.get("variant"))
+
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        results = list(ex.map(job, cfg.items()))
+
+    sent = 0
+    for slug, (last, variant, matched) in results:
+        gs = gifts_state[slug]
+        gs["last_seen"], gs["variant"] = last, variant
+        for g in matched:
+            text = format_alert(g)
+            if dry_run:
+                log(f"  [dry-run] would post:\n{text}")
+            elif bot.send_message(chat_id, text):
+                sent += 1
+                time.sleep(1.1)  # stay under Telegram's ~1 msg/sec per chat
+            log(f"  ✅ {g.get('name')} model={g.get('model', {}).get('name')} "
+                f"backdrop={g.get('backdrop', {}).get('name')}")
     return sent
 
 
