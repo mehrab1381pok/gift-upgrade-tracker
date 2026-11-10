@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 WORKDIR /app
-COPY tracker.py config.yaml config-rare.yaml config-both.yaml ./
+COPY tracker.py config.yaml config-rare.yaml config-both.yaml seed_state.json ./
 # state.json lives on a persistent volume in production; without one a
 # redeploy just re-runs --bootstrap (harmless, a few minutes).
 EXPOSE 8080

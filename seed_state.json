@@ -1,0 +1,501 @@
+{
+ "version": 1,
+ "gifts": {
+  "AlgorithmCup": {
+   "last_seen": 31,
+   "variant": 0
+  },
+  "ArtisanBrick": {
+   "last_seen": 6296,
+   "variant": 0
+  },
+  "AstralShard": {
+   "last_seen": 5710,
+   "variant": 0
+  },
+  "B-DayCandle": {
+   "last_seen": 271918,
+   "variant": 0
+  },
+  "BerryBox": {
+   "last_seen": 53579,
+   "variant": 0
+  },
+  "BigYear": {
+   "last_seen": 78497,
+   "variant": 0
+  },
+  "BlingBinky": {
+   "last_seen": 9434,
+   "variant": 0
+  },
+  "BondedRing": {
+   "last_seen": 7846,
+   "variant": 0
+  },
+  "BowTie": {
+   "last_seen": 56648,
+   "variant": 0
+  },
+  "BunnyMuffin": {
+   "last_seen": 54702,
+   "variant": 0
+  },
+  "CandyCane": {
+   "last_seen": 231441,
+   "variant": 0
+  },
+  "ChillFlame": {
+   "last_seen": 449162,
+   "variant": 0
+  },
+  "CloverPin": {
+   "last_seen": 235399,
+   "variant": 0
+  },
+  "CookieHeart": {
+   "last_seen": 201317,
+   "variant": 0
+  },
+  "CrystalBall": {
+   "last_seen": 26785,
+   "variant": 0
+  },
+  "CupidCharm": {
+   "last_seen": 30432,
+   "variant": 0
+  },
+  "DeskCalendar": {
+   "last_seen": 5935,
+   "variant": 0
+  },
+  "DiamondRing": {
+   "last_seen": 32309,
+   "variant": 0
+  },
+  "Durov'sCap": {
+   "last_seen": 4710,
+   "variant": 0
+  },
+  "Durov'sGlasses": {
+   "last_seen": 3980,
+   "variant": 0
+  },
+  "EasterEgg": {
+   "last_seen": 63,
+   "variant": 0
+  },
+  "ElectricSkull": {
+   "last_seen": 9237,
+   "variant": 0
+  },
+  "EternalCandle": {
+   "last_seen": 45191,
+   "variant": 0
+  },
+  "EternalRose": {
+   "last_seen": 32151,
+   "variant": 0
+  },
+  "EvilEye": {
+   "last_seen": 74810,
+   "variant": 0
+  },
+  "FaithAmulet": {
+   "last_seen": 142702,
+   "variant": 0
+  },
+  "FinePen": {
+   "last_seen": 39478,
+   "variant": 0
+  },
+  "FlyingBroom": {
+   "last_seen": 24868,
+   "variant": 0
+  },
+  "FreshSocks": {
+   "last_seen": 166787,
+   "variant": 0
+  },
+  "GemSignet": {
+   "last_seen": 6263,
+   "variant": 0
+  },
+  "GenieLamp": {
+   "last_seen": 6609,
+   "variant": 0
+  },
+  "GingerCookie": {
+   "last_seen": 152376,
+   "variant": 0
+  },
+  "HangingStar": {
+   "last_seen": 47586,
+   "variant": 0
+  },
+  "HappyBrownie": {
+   "last_seen": 227795,
+   "variant": 0
+  },
+  "HeartLocket": {
+   "last_seen": 1951,
+   "variant": 0
+  },
+  "HeroicHelmet": {
+   "last_seen": 3441,
+   "variant": 0
+  },
+  "HexPot": {
+   "last_seen": 57150,
+   "variant": 0
+  },
+  "HolidayDrink": {
+   "last_seen": 90725,
+   "variant": 0
+  },
+  "HomemadeCake": {
+   "last_seen": 180721,
+   "variant": 0
+  },
+  "HypnoLollipop": {
+   "last_seen": 84574,
+   "variant": 0
+  },
+  "IceCream": {
+   "last_seen": 329038,
+   "variant": 0
+  },
+  "InputKey": {
+   "last_seen": 135763,
+   "variant": 0
+  },
+  "InstantRamen": {
+   "last_seen": 391520,
+   "variant": 0
+  },
+  "IntelligenceCup": {
+   "last_seen": 0,
+   "variant": null
+  },
+  "IonGem": {
+   "last_seen": 4537,
+   "variant": 0
+  },
+  "IonicDryer": {
+   "last_seen": 20937,
+   "variant": 0
+  },
+  "Jack-in-the-Box": {
+   "last_seen": 96261,
+   "variant": 0
+  },
+  "JellyBunny": {
+   "last_seen": 108770,
+   "variant": 0
+  },
+  "JesterHat": {
+   "last_seen": 144637,
+   "variant": 0
+  },
+  "JingleBells": {
+   "last_seen": 207,
+   "variant": 0
+  },
+  "JollyChimp": {
+   "last_seen": 118195,
+   "variant": 0
+  },
+  "JoyfulBundle": {
+   "last_seen": 85337,
+   "variant": 0
+  },
+  "Khabib'sPapakha": {
+   "last_seen": 29000,
+   "variant": 0
+  },
+  "KissedFrog": {
+   "last_seen": 14091,
+   "variant": 0
+  },
+  "LibertyFigure": {
+   "last_seen": 270227,
+   "variant": 0
+  },
+  "LightSword": {
+   "last_seen": 125376,
+   "variant": 0
+  },
+  "LolPop": {
+   "last_seen": 435213,
+   "variant": 0
+  },
+  "LootBag": {
+   "last_seen": 14435,
+   "variant": 0
+  },
+  "LoveCandle": {
+   "last_seen": 24680,
+   "variant": 0
+  },
+  "LovePotion": {
+   "last_seen": 29203,
+   "variant": 0
+  },
+  "LowRider": {
+   "last_seen": 23536,
+   "variant": 0
+  },
+  "LuckyLocket": {
+   "last_seen": 36233,
+   "variant": 0
+  },
+  "LunarSnake": {
+   "last_seen": 202599,
+   "variant": 0
+  },
+  "LushBouquet": {
+   "last_seen": 112888,
+   "variant": 0
+  },
+  "MadPumpkin": {
+   "last_seen": 19824,
+   "variant": 0
+  },
+  "MagicPotion": {
+   "last_seen": 4782,
+   "variant": 0
+  },
+  "MightyArm": {
+   "last_seen": 3834,
+   "variant": 0
+  },
+  "MiniOscar": {
+   "last_seen": 4895,
+   "variant": 0
+  },
+  "MirageLamp": {
+   "last_seen": 0,
+   "variant": null
+  },
+  "MoneyPot": {
+   "last_seen": 74879,
+   "variant": 0
+  },
+  "MoodPack": {
+   "last_seen": 184826,
+   "variant": 0
+  },
+  "MoonPendant": {
+   "last_seen": 102780,
+   "variant": 0
+  },
+  "MousseCake": {
+   "last_seen": 181011,
+   "variant": 0
+  },
+  "MythMask": {
+   "last_seen": 301,
+   "variant": 0
+  },
+  "NailBracelet": {
+   "last_seen": 4696,
+   "variant": 0
+  },
+  "NekoHelmet": {
+   "last_seen": 15586,
+   "variant": 0
+  },
+  "PartySparkler": {
+   "last_seen": 190347,
+   "variant": 0
+  },
+  "PerfumeBottle": {
+   "last_seen": 4439,
+   "variant": 0
+  },
+  "PetSnake": {
+   "last_seen": 193809,
+   "variant": 0
+  },
+  "PlushPepe": {
+   "last_seen": 2825,
+   "variant": 0
+  },
+  "PoolFloat": {
+   "last_seen": 229193,
+   "variant": 0
+  },
+  "PreciousPeach": {
+   "last_seen": 3010,
+   "variant": 0
+  },
+  "PrettyPosy": {
+   "last_seen": 134406,
+   "variant": 0
+  },
+  "RareBird": {
+   "last_seen": 13022,
+   "variant": 0
+  },
+  "RecordPlayer": {
+   "last_seen": 35492,
+   "variant": 0
+  },
+  "ResistanceDog": {
+   "last_seen": 15,
+   "variant": 0
+  },
+  "RestlessJar": {
+   "last_seen": 103695,
+   "variant": 0
+  },
+  "SakuraFlower": {
+   "last_seen": 88005,
+   "variant": 0
+  },
+  "SantaHat": {
+   "last_seen": 72032,
+   "variant": 0
+  },
+  "ScaredCat": {
+   "last_seen": 18766,
+   "variant": 0
+  },
+  "SharpTongue": {
+   "last_seen": 8150,
+   "variant": 0
+  },
+  "SignetRing": {
+   "last_seen": 16990,
+   "variant": 0
+  },
+  "SkullFlower": {
+   "last_seen": 22093,
+   "variant": 0
+  },
+  "SkyStilettos": {
+   "last_seen": 52525,
+   "variant": 0
+  },
+  "SleighBell": {
+   "last_seen": 23139,
+   "variant": 0
+  },
+  "SnakeBox": {
+   "last_seen": 190358,
+   "variant": 0
+  },
+  "SnoopCigar": {
+   "last_seen": 117680,
+   "variant": 0
+  },
+  "SnoopDogg": {
+   "last_seen": 524288,
+   "variant": 0
+  },
+  "SnowGlobe": {
+   "last_seen": 55778,
+   "variant": 0
+  },
+  "SnowMittens": {
+   "last_seen": 40654,
+   "variant": 0
+  },
+  "SpicedWine": {
+   "last_seen": 109256,
+   "variant": 0
+  },
+  "SpringBasket": {
+   "last_seen": 186174,
+   "variant": 0
+  },
+  "SpyAgaric": {
+   "last_seen": 86941,
+   "variant": 0
+  },
+  "StarNotepad": {
+   "last_seen": 74162,
+   "variant": 0
+  },
+  "StellarRocket": {
+   "last_seen": 138477,
+   "variant": 0
+  },
+  "SurgeBoard": {
+   "last_seen": 33063,
+   "variant": 0
+  },
+  "SwagBag": {
+   "last_seen": 232369,
+   "variant": 0
+  },
+  "SwissWatch": {
+   "last_seen": 26116,
+   "variant": 0
+  },
+  "TamaGadget": {
+   "last_seen": 108863,
+   "variant": 0
+  },
+  "TimelessBook": {
+   "last_seen": 89312,
+   "variant": 0
+  },
+  "TopHat": {
+   "last_seen": 34406,
+   "variant": 0
+  },
+  "ToyBear": {
+   "last_seen": 56262,
+   "variant": 0
+  },
+  "TrappedHeart": {
+   "last_seen": 25147,
+   "variant": 0
+  },
+  "UFCStrike": {
+   "last_seen": 255,
+   "variant": 0
+  },
+  "ValentineBox": {
+   "last_seen": 35690,
+   "variant": 0
+  },
+  "ViceCream": {
+   "last_seen": 443742,
+   "variant": 0
+  },
+  "VictoryMedal": {
+   "last_seen": 107554,
+   "variant": 0
+  },
+  "VintageCigar": {
+   "last_seen": 26875,
+   "variant": 0
+  },
+  "VoodooDoll": {
+   "last_seen": 26840,
+   "variant": 0
+  },
+  "WestsideSign": {
+   "last_seen": 11514,
+   "variant": 0
+  },
+  "WhipCupcake": {
+   "last_seen": 284366,
+   "variant": 0
+  },
+  "WinterWreath": {
+   "last_seen": 78242,
+   "variant": 0
+  },
+  "WitchHat": {
+   "last_seen": 82927,
+   "variant": 0
+  },
+  "XmasStocking": {
+   "last_seen": 232329,
+   "variant": 0
+  }
+ }
+}
