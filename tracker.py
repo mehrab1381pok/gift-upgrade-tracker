@@ -386,6 +386,23 @@ def main():
         log(f"bootstrap done, state saved to {state_path}")
         return
 
+    # Auto-bootstrap: any gift with no recorded head must be bootstrapped
+    # before polling, otherwise the loop would walk from #1 and re-post
+    # historical matches. Runs on first start and after a redeploy that
+    # lost state.json (a few minutes, harmless).
+    missing = [s for s in cfg
+               if not state.get("gifts", {}).get(s, {}).get("last_seen")]
+    if missing and not args.dry_run:
+        log(f"auto-bootstrap: finding head for {len(missing)} gifts...")
+        for slug in missing:
+            gs = state.setdefault("gifts", {}).setdefault(
+                slug, {"last_seen": 0, "variant": None})
+            head, variant = find_head(bot, slug, gs.get("variant"))
+            gs["last_seen"], gs["variant"] = head, variant
+            save_state(state_path, state)
+            log(f"  {slug}: head=#{head}")
+        log("auto-bootstrap done")
+
     if not chat_id and not args.dry_run:
         raise SystemExit("TARGET_CHAT_ID is not set (or use --dry-run).")
     poll_seconds = float(os.environ.get("POLL_SECONDS", "90"))
