@@ -47,6 +47,7 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 import threading
+from concurrent.futures import ThreadPoolExecutor
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 API = "https://api.telegram.org/bot{token}/{method}"
@@ -107,6 +108,14 @@ def load_state(path):
     if os.path.exists(path):
         with open(path, encoding="utf-8") as fh:
             return json.load(fh)
+    # First start on a fresh container: seed from a pre-bootstrapped
+    # seed_state.json shipped next to this script, if one exists.
+    seed = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                        "seed_state.json")
+    if os.path.exists(seed):
+        log("no state file yet — seeding from seed_state.json")
+        with open(seed, encoding="utf-8") as fh:
+            return json.load(fh)
     return {"version": 1, "gifts": {}}
 
 
@@ -143,18 +152,25 @@ class Bot:
         except Exception as e:  # network blip: caller decides
             return {"ok": False, "error_code": 0, "description": f"network: {e}"}
 
-    def get_unique_gift(self, name):
-        """Returns UniqueGift dict, None if the gift does not exist (yet)."""
+    def get_unique_gift(self, name, _attempt=0):
+        """Returns UniqueGift dict, None if the gift does not exist (yet).
+        Network errors and 5xx are retried with backoff — a timeout must
+        never be mistaken for 'gift does not exist'."""
         res = self.call("getUniqueGift", {"name": name})
         if res.get("ok"):
             return res["result"]
         desc = str(res.get("description", ""))
-        if res.get("error_code") in (400, 404) or "not found" in desc.lower() \
-                or "gift" in desc.lower():
-            return None
-        if res.get("error_code") == 401:
+        code = res.get("error_code")
+        if code == 401:
             raise SystemExit("Bot API 401 — BOT_TOKEN is wrong or revoked.")
-        log(f"  getUniqueGift({name}) unexpected error: {res}")
+        if code in (400, 404) or "not found" in desc.lower():
+            return None
+        if _attempt < 4:
+            wait = (2, 5, 10, 20)[_attempt]
+            log(f"  getUniqueGift({name}) error {code} ({desc[:60]}), retry in {wait}s")
+            time.sleep(wait)
+            return self.get_unique_gift(name, _attempt + 1)
+        log(f"  getUniqueGift({name}) giving up after retries: {res}")
         return None
 
     def send_message(self, chat_id, text):
@@ -242,6 +258,23 @@ def find_head(bot, slug, variant=None, sleep=0.2):
             hi = mid
         time.sleep(sleep)
     return lo, variant
+
+
+def bootstrap_gifts(bot, state, state_path, slugs, workers=6):
+    """Find and record the head number for each slug, in parallel."""
+    lock = threading.Lock()
+
+    def _boot(slug):
+        gs = state.setdefault("gifts", {}).setdefault(
+            slug, {"last_seen": 0, "variant": None})
+        head, variant = find_head(bot, slug, gs.get("variant"))
+        with lock:
+            gs["last_seen"], gs["variant"] = head, variant
+            save_state(state_path, state)
+        log(f"  {slug}: head=#{head}")
+
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        list(ex.map(_boot, list(slugs)))
 
 
 def poll_once(bot, cfg, state, chat_id, dry_run, sleep=0.2):
@@ -377,36 +410,31 @@ def main():
 
     if args.bootstrap or args.bootstrap_gift:
         targets = [args.bootstrap_gift] if args.bootstrap_gift else list(cfg)
-        for slug in targets:
-            gs = state.setdefault("gifts", {}).setdefault(slug, {"last_seen": 0, "variant": None})
-            head, variant = find_head(bot, slug, gs.get("variant"))
-            gs["last_seen"], gs["variant"] = head, variant
-            save_state(state_path, state)
-            log(f"  {slug}: head=#{head} (variant {variant})")
+        workers = int(os.environ.get("BOOTSTRAP_WORKERS", "6"))
+        bootstrap_gifts(bot, state, state_path, targets, workers)
         log(f"bootstrap done, state saved to {state_path}")
         return
 
+    # Health server first: the host marks the service healthy and external
+    # pingers can reach it while bootstrap is still running.
+    start_health_server()
+
     # Auto-bootstrap: any gift with no recorded head must be bootstrapped
     # before polling, otherwise the loop would walk from #1 and re-post
-    # historical matches. Runs on first start and after a redeploy that
-    # lost state.json (a few minutes, harmless).
+    # historical matches. Runs in parallel; also the fallback on a fresh
+    # container when no seed_state.json was shipped.
     missing = [s for s in cfg
                if not state.get("gifts", {}).get(s, {}).get("last_seen")]
     if missing and not args.dry_run:
-        log(f"auto-bootstrap: finding head for {len(missing)} gifts...")
-        for slug in missing:
-            gs = state.setdefault("gifts", {}).setdefault(
-                slug, {"last_seen": 0, "variant": None})
-            head, variant = find_head(bot, slug, gs.get("variant"))
-            gs["last_seen"], gs["variant"] = head, variant
-            save_state(state_path, state)
-            log(f"  {slug}: head=#{head}")
+        workers = int(os.environ.get("BOOTSTRAP_WORKERS", "6"))
+        log(f"auto-bootstrap: finding head for {len(missing)} gifts "
+            f"({workers} workers)...")
+        bootstrap_gifts(bot, state, state_path, missing, workers)
         log("auto-bootstrap done")
 
     if not chat_id and not args.dry_run:
         raise SystemExit("TARGET_CHAT_ID is not set (or use --dry-run).")
     poll_seconds = float(os.environ.get("POLL_SECONDS", "90"))
-    start_health_server()
     while True:
         try:
             sent = poll_once(bot, cfg, state, chat_id, args.dry_run)
