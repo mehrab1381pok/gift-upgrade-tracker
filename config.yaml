@@ -1,0 +1,624 @@
+# Gift upgrade tracker config
+# thanks to @GiftChanges for this API (api.changes.tg)
+# Fill 'models' per gift with the exact model names you want alerts for.
+# black_backdrop: true = alert on Black / Onyx Black backdrops of that gift.
+
+AlgorithmCup:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+ArtisanBrick:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+AstralShard:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+B-DayCandle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+BerryBox:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+BigYear:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+BlingBinky:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+BondedRing:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+BowTie:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+BunnyMuffin:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+CandyCane:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+ChillFlame:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+CloverPin:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+CookieHeart:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+CrystalBall:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+CupidCharm:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+DeskCalendar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+DiamondRing:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+Durov'sCap:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+Durov'sGlasses:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+EasterEgg:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+ElectricSkull:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+EternalCandle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+EternalRose:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+EvilEye:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+FaithAmulet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+FinePen:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+FlyingBroom:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+FreshSocks:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+GemSignet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+GenieLamp:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+GingerCookie:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+HangingStar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+HappyBrownie:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+HeartLocket:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+HeroicHelmet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+HexPot:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+HolidayDrink:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+HomemadeCake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+HypnoLollipop:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+IceCream:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+InputKey:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+InstantRamen:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+IntelligenceCup:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+IonGem:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+IonicDryer:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+Jack-in-the-Box:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+JellyBunny:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+JesterHat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+JingleBells:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+JollyChimp:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+JoyfulBundle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+Khabib'sPapakha:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+KissedFrog:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LibertyFigure:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LightSword:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LolPop:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LootBag:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LoveCandle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LovePotion:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LowRider:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LuckyLocket:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LunarSnake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+LushBouquet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MadPumpkin:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MagicPotion:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MightyArm:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MiniOscar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MirageLamp:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MoneyPot:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MoodPack:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MoonPendant:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MousseCake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+MythMask:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+NailBracelet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+NekoHelmet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+PartySparkler:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+PerfumeBottle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+PetSnake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+PlushPepe:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+PoolFloat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+PreciousPeach:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+PrettyPosy:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+RareBird:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+RecordPlayer:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+ResistanceDog:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+RestlessJar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SakuraFlower:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SantaHat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+ScaredCat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SharpTongue:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SignetRing:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SkullFlower:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SkyStilettos:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SleighBell:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SnakeBox:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SnoopCigar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SnoopDogg:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SnowGlobe:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SnowMittens:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SpicedWine:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SpringBasket:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SpyAgaric:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+StarNotepad:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+StellarRocket:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SurgeBoard:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SwagBag:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+SwissWatch:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+TamaGadget:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+TimelessBook:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+TopHat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+ToyBear:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+TrappedHeart:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+UFCStrike:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+ValentineBox:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+ViceCream:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+VictoryMedal:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+VintageCigar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+VoodooDoll:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+WestsideSign:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+WhipCupcake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+WinterWreath:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+WitchHat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here
+
+XmasStocking:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # <-- put chosen model names here

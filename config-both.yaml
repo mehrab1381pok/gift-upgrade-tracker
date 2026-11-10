@@ -1,0 +1,627 @@
+# Gift upgrade tracker config - COMBINED (black backdrops + rarest models)
+# Chosen by Mehrab on 2026-11-10: alert on black backdrops AND on the listed models.
+# thanks to @GiftChanges for this API (api.changes.tg)
+# Generated 2026-11-10 from models.csv (top-3 rarest non-crafted models per gift).
+# Edit freely: delete model lines you do not want, add any model name from
+# gifts-models-and-black-backdrops.md. Logic is OR: black backdrop OR listed model.
+# Algorithm Cup / Intelligence Cup have no models on purpose (rarest Gold is 17%/16.7%).
+
+AlgorithmCup:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # rarest is Gold at 17%/16.7% - not rare; add it only if you want it
+
+ArtisanBrick:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Gold Bar", "Gold Block", "USBrick"]
+
+AstralShard:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Dark Soul", "Elven Might", "Eve’s Apple"]
+
+B-DayCandle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Final Boss", "Kaboom!", "On Fire"]
+
+BerryBox:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Berrific", "Bumberries", "Lady Bites"]
+
+BigYear:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Creator", "Game Boy", "Gold Mine"]
+
+BlingBinky:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Monarch", "Red Lipstick", "Star Fighter"]
+
+BondedRing:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Ring of Roots", "Asteroid", "Goldsmith"]
+
+BowTie:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Batwing", "Cambridge", "Dark Lord"]
+
+BunnyMuffin:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Diamond", "Froggy", "Gold"]
+
+CandyCane:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Designer", "Hex Pot", "Masterpiece"]
+
+ChillFlame:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Eye of Sauron", "Satis-fire", "Baba Yaga"]
+
+CloverPin:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Emo Pin", "Kelly Green", "Moon Power"]
+
+CookieHeart:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Dark Pawder", "Lucky Charm", "Sugar Kitty"]
+
+CrystalBall:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Broken Heart", "Disco", "Druid Circle"]
+
+CupidCharm:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Antique", "Cogwheel", "Dryad Heart"]
+
+DeskCalendar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Balloon Face", "Burning Time", "Deadline"]
+
+DiamondRing:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Black Hole", "Black Thorn", "Blood Band"]
+
+Durov'sCap:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Asterix", "Artwork", "RGB Glitch"]
+
+Durov'sGlasses:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Thug Life", "Curious", "Face Shield"]
+
+EasterEgg:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Baby Chick", "Baby Turtle", "Choco Bunny"]
+
+ElectricSkull:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bad Fortune", "Calavera", "Nightmare"]
+
+EternalCandle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bubble Bath", "Cherry Burn", "Healing Mist"]
+
+EternalRose:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Quantum", "Vivid Prize", "Atlantis"]
+
+EvilEye:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Blue Flame", "Event Horizon", "Ice Sight"]
+
+FaithAmulet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Gold Night", "Golden Lace", "Ocean Glass"]
+
+FinePen:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Coin Mint", "Redacted", "School Time"]
+
+FlyingBroom:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bunsen Burner", "Butterflight", "Emergency"]
+
+FreshSocks:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Billie Jean", "Puppet Master", "Free Elf"]
+
+GemSignet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Molten Core", "Spinny Boi", "Atomic Bomb"]
+
+GenieLamp:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Aladdin", "Cat Spirit", "Lava Lamp"]
+
+GingerCookie:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Universe", "Brand New", "Frostbite"]
+
+HangingStar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Shamrock", "Snowflake", "Sparkles"]
+
+HappyBrownie:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Kinky Stinky", "Golgothan", "Modern Art"]
+
+HeartLocket:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Cirque", "Golden", "Great Wave"]
+
+HeroicHelmet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Cyberpunk", "Dynamo", "Equalizer"]
+
+HexPot:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Amortentia", "Defensive", "Felix Felicis"]
+
+HolidayDrink:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Gold Dust", "Cyber Mix", "Brain Gum"]
+
+HomemadeCake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Birthday", "Blue Depth", "Bonecake"]
+
+HypnoLollipop:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Compact Disc", "Graffiti", "Kawaii Dog"]
+
+IceCream:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Cryo Pepe", "Poopsicle", "Resistance"]
+
+InputKey:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Like Button", "Press F", "Quad Damage"]
+
+InstantRamen:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bitcoins", "Diamonds", "Golden Fleece"]
+
+IntelligenceCup:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: []  # rarest is Gold at 17%/16.7% - not rare; add it only if you want it
+
+IonGem:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Elements", "Kryptonite", "Pink Floyd"]
+
+IonicDryer:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Air Force One", "Arc Reactor", "Beholder"]
+
+Jack-in-the-Box:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Haunted House", "Crash TNT", "Happy Poo"]
+
+JellyBunny:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Artificial", "Auburn", "Avocado Awe"]
+
+JesterHat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Hellscape", "Jester Box", "Mind Blown"]
+
+JingleBells:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Glass Bloom", "Launchpad", "Ribbit"]
+
+JollyChimp:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Chimpool", "Golden Monkey", "Liberation"]
+
+JoyfulBundle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bull Run", "Pepe Bag", "Pure Gold"]
+
+Khabib'sPapakha:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Legendary Item", "Black Diamond", "Champion Belt"]
+
+KissedFrog:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Brewtoad", "Count Croakula", "Frogmaid"]
+
+LibertyFigure:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Baywatch", "Homeland", "iFather"]
+
+LightSword:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Wrath of Vader", "Fury of Kylo", "Jedi Luke"]
+
+LolPop:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Andromeda", "Angelina", "Blood Sucker"]
+
+LootBag:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Ardente", "Black Purrse", "Bouquet"]
+
+LoveCandle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Blood Burner", "Cyberpunk", "Harvest"]
+
+LovePotion:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Angel Wings", "Astral Guide", "Banana"]
+
+LowRider:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["DeLorean", "Gigahorse", "Telegram Bus"]
+
+LuckyLocket:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Alien", "Magic Ball", "Scared Cat"]
+
+LunarSnake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Dragon Ball", "Gen Zmei", "Hot Cherry"]
+
+LushBouquet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Cable Mess", "Chamomile", "Lotus Garden"]
+
+MadPumpkin:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Creepy Po", "Dark Dipsy", "Kinky-Winky"]
+
+MagicPotion:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Deep Freeze", "Error Elixir", "Fish Sauce"]
+
+MightyArm:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Best Muscles", "Colossus", "Icebreaker"]
+
+MiniOscar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Banana", "Blue Lagoon", "Blue Sky"]
+
+MirageLamp:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Crimson Shrine", "Warm Pixel", "Amber Alcove"]
+
+MoneyPot:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Skibidi Toilet", "TON Holder", "Ammunition"]
+
+MoodPack:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Battle Royale", "Jetpack", "Net Worth"]
+
+MoonPendant:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Jade Vines", "Obsidian", "Princess"]
+
+MousseCake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Still Alive", "Suprematism", "Crypto Chips"]
+
+MythMask:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Dark Knight", "Night Howler", "Anubis"]
+
+NailBracelet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Diamond", "Gold Rush", "Interstellar"]
+
+NekoHelmet:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bulldog Bob", "Dalmatian", "Mad Clown"]
+
+PartySparkler:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bitcoin", "Mad Chemist", "Power Line"]
+
+PerfumeBottle:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Blizzard", "Electric Aura", "Flame Kiss"]
+
+PetSnake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Portal", "Banana", "Spooky"]
+
+PlushPepe:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Cozy Galaxy", "Donatello", "Emerald Plush"]
+
+PoolFloat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Baywatch", "Luxury Yacht", "Nessie"]
+
+PreciousPeach:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Caramel Red", "Cherry Secret", "Shocking"]
+
+PrettyPosy:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Aubergines", "Roadworks", "Semki"]
+
+RareBird:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Fiscal Hawk", "Frozen Gold", "Royal Pavo"]
+
+RecordPlayer:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Barbie Land", "Broken Record", "Emocore"]
+
+ResistanceDog:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Imposter", "Chosen One", "Chinese Dragon"]
+
+RestlessJar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Gift Holder", "Kittens", "Pepe Pod"]
+
+SakuraFlower:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Flowey", "Carnation", "Dog Flower"]
+
+SantaHat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Creamy", "Fireball", "Jingle Volts"]
+
+ScaredCat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Azuki Siam", "Bubblegum", "Fern"]
+
+SharpTongue:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Glitch", "Secret Look", "Teasing Look"]
+
+SignetRing:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Skibidi", "Crypto Boom", "Black Noir"]
+
+SkullFlower:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Black Cat", "Ghost Rider", "Leopard"]
+
+SkyStilettos:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Crypto Queen", "Fortuna", "Spidergirl"]
+
+SleighBell:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Darth Vader", "Disco Blast", "Stellar Map"]
+
+SnakeBox:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Claw Crane", "Jackbox", "Aquarium"]
+
+SnoopCigar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Cartoon Roll", "Infinity Stoned", "Snoop Graffiti"]
+
+SnoopDogg:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Doggfather", "Goldizzle", "King Snoop"]
+
+SnowGlobe:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Cherry Duck", "Musk", "Pepe Frost"]
+
+SnowMittens:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Astronaut", "Diamond Hands", "Fire Nation"]
+
+SpicedWine:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Black Hole", "Captain Nemo", "Dark Disco"]
+
+SpringBasket:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Meme God", "Bondage", "Rabbit Habit"]
+
+SpyAgaric:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Amour Touch", "Blooming Cap", "Nosferatu"]
+
+StarNotepad:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Alien Script", "Clown", "Mon Amour"]
+
+StellarRocket:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bitcoin", "Mission Uranus", "To The Moon"]
+
+SurgeBoard:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Ayanami", "Balls of Steel", "Bitcoin"]
+
+SwagBag:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Cashback", "Cookie Dude", "Gin & Jewels"]
+
+SwissWatch:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Asteroid", "Cherry Time", "Cupid Clock"]
+
+TamaGadget:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Alien Attack", "Birthday", "Diamond Ton"]
+
+TimelessBook:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Death Note", "The Ledger", "Token Vault"]
+
+TopHat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Pixel Perfect", "Constable", "Grey Gatsby"]
+
+ToyBear:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Golden Cub", "Blueprint", "Dark Knight"]
+
+TrappedHeart:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Comic Book", "Jack-o-Love", "Jinx"]
+
+UFCStrike:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Gold Adesanya", "Gold Chimaev", "Gold Dvalishvili"]
+
+ValentineBox:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Hitman", "Minnie", "Toncoin"]
+
+ViceCream:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Dark Lord", "Gold Leaf", "Red Dragon"]
+
+VictoryMedal:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Aegis", "First Finisher", "King Troll"]
+
+VintageCigar:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["El Classico", "Ice Cold", "Saturn V"]
+
+VoodooDoll:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Disco Doll", "Scribble Stab", "Cruella"]
+
+WestsideSign:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Champion", "Gospel Vibe", "Sapphire"]
+
+WhipCupcake:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Bitcoin", "Deep State", "Resistance"]
+
+WinterWreath:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Berry Meadow", "Black Kitty", "Candles"]
+
+WitchHat:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Alchemy", "Arctic", "Arts Major"]
+
+XmasStocking:
+  black_backdrop: true
+  black_backdrops: [Black, Onyx Black]
+  models: ["Abandoned", "Cash Balance", "Cowboy"]
